@@ -35,7 +35,8 @@ export function MovieDetail({ movieCd, movieNmFromList }: MovieDetailProps) {
       setAiReview("");
       setGenerationError(null);
       try {
-        const response = await fetch(`/api/movieinfo?movieCd=${movieCd}`);
+        const movieNmQuery = movieNmFromList ? `&movieNm=${encodeURIComponent(movieNmFromList)}` : "";
+        const response = await fetch(`/api/movieinfo?movieCd=${movieCd}${movieNmQuery}`);
         if (!response.ok) {
           throw new Error("영화 상세 정보를 불러오는데 실패했습니다.");
         }

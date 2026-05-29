@@ -1,0 +1,6 @@
+{
+  "name": "일일 박스오피스",
+  "description": "KOBIS OpenAPI를 연동하여 일일 박스오피스 목록과 상세 영화 정보를 제공하는 서비스입니다. 날짜별 인기 영화를 쉽고 직관적으로 확인할 수 있습니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
